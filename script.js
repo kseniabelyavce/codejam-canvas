@@ -1,6 +1,6 @@
 function draw(resolution) {
-  var canvas = document.getElementById('canvas');
-  var ctx = canvas.getContext('2d');
+  const canvas = document.getElementById('canvas'); 
+  const ctx = canvas.getContext('2d');
 
   canvas.width = canvas.height = resolution;
 
@@ -48,7 +48,7 @@ function draw(resolution) {
   }
 }
 
-function radio() {
+function radioButtons() {
   const radios = document.getElementsByName('resolution');
 
   radios.forEach(function(radio) {
@@ -67,5 +67,5 @@ function hexToRGBA(hex) {
 }
 
 function init() {
-  radio();
+  radioButtons();
 }
